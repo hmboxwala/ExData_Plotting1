@@ -16,7 +16,7 @@ hec$Sub_metering_3 <- as.numeric(hec$Sub_metering_3)
 
 # Plot the graph and store it in a png file
 png("plot3.png")
-with(hec, plot(Date, Sub_metering_1, type = "n"))
+with(hec, plot(Date, Sub_metering_1, type = "n",ylab="Energy sub metering", xlab=""))
 with(hec, lines(Date, Sub_metering_1, col = "black"))
 with(hec, lines(Date, Sub_metering_2, col = "red"))
 with(hec, lines(Date, Sub_metering_3, col = "blue"))

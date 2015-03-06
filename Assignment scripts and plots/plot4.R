@@ -21,7 +21,7 @@ par(mfrow = c(2, 2))
 with(hec, {
   plot(Date,Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)")
   plot(Date,Voltage,type="l",xlab="datetime",ylab="Voltage")
-  plot(Date, Sub_metering_1, type = "n")
+  plot(Date, Sub_metering_1, type = "n", ylab="Energy sub metering",xlab="")
   lines(Date, Sub_metering_1, col = "black")
   lines(Date, Sub_metering_2, col = "red")
   lines(Date, Sub_metering_3, col = "blue")
